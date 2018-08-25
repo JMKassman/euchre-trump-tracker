@@ -4,17 +4,6 @@
     margin: 0;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: "spades hearts" "diams clubs";
-    grid-gap: 10px;
-    width: 98vw;
-    height: 98vh;
-    margin: 1vh 1vw;
-}
-
 .spades {
     grid-area: spades;
     justify-self: center;
@@ -47,9 +36,104 @@
     width: 100%;
 }
 
-.fullIcon {
-    display: block;
-    height: 90vmin;
-    width: 90vmin;
-    margin: 5vmin auto;
+
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "spades hearts" "diams clubs";
+        max-width: 320px;
+        max-height: 240px;
+        margin: auto;
+    }
+
+    .fullIcon {
+        display: block;
+        max-height: 240px;
+        max-width: 320px;
+        margin: auto;
+    }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "spades hearts" "diams clubs";
+        max-width: 480px;
+        max-height: 320px;
+        margin: auto;
+    }
+
+    .fullIcon {
+        display: block;
+        max-height: 480px;
+        max-width: 320px;
+        margin: auto;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "spades hearts" "diams clubs";
+        max-width: 768px;
+        max-height: 400px;
+        margin: auto;
+    }
+
+    .fullIcon {
+        display: block;
+        max-height: 400px;
+        max-width: 768px;
+        margin: auto;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "spades hearts" "diams clubs";
+        max-width: 992px;
+        max-height: 600px;
+        margin: auto;
+    }
+
+    .fullIcon {
+        display: block;
+        max-height: 600px;
+        max-width: 992px;
+        margin: auto;
+    }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "spades hearts" "diams clubs";
+        max-width: 800px;
+        max-height: 1200px;
+        margin: auto;
+    }
+
+    .fullIcon {
+        display: block;
+        max-height: 800px;
+        max-width: 1200px;
+        margin: auto;
+    }
 }
